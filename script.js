@@ -19,7 +19,10 @@
 // task-5
 // let a = 10
 // let b = 2
-// console.log(10 - 2)
+// console.log(a + b) сложит
+// console.log(a - b) отнят
+// console.log(a * b)
+// console.log(a / b)
 
 // task-6
 // let a = 15
@@ -30,26 +33,26 @@
 // task-7
 // let a = 30
 // let b = 15
-// let c = a + b
-// console.log(c % 4)
+// let c = a + b сложит
+// console.log(c % 4) деление (остаток "4")
 
 // task 8
 // let a = 17
 // let b = 10
-// console.log(a - b)
+// console.log(a - b) отнят
 // let c = 7
 // let d = 5
-// let result = c + d
+// let result = c + d  сложит
 // console.log(result)
 
 // task-9
-// let a = 10
-// let b = 99
+// let a = '10'
+// let b = '99'
 // let result = a + b
 // console.log(result)
 
 // task-10
-// let name = "Ascar"
+// let name = "Askar"
 // let number = 10
 // let result = name + number
 // console.log(result)
@@ -58,11 +61,12 @@
 // task-11
 // let a = 20
 // let b = 10
-// console.log(a  b)
+// a = a + b
+// console.log(a)
 
-// task 12
-// let a = 20
-// let b = 10
+// task-12
+// let a = 90
+// let b = 2
 // b = a - b
 // console.log(b)
 
@@ -94,7 +98,7 @@
 // task-18
 // let a = 28
 // let b = 5
-// console.log(a % b)
+// console.log(a % b) деление
 
 // task-19
 // let a = 20
@@ -121,16 +125,17 @@
 // task-24
 // let str1 = "Приве, "
 // let str2 = "Мир!"
-// console.log(str1 + str2)
+// // console.log(str1 + str2)
+// console.log(`${str1} ${str2}`) лучше делать так
 
 // task-25
 // let name = "Erzhan"
-// let result = "Hello " + name
+// let result =(`"Hello " + ${name}`) лучше делать так
 // console.log(result)
 
 // task-26
 // let age = 30
-// let result = "I'm " + age + " years old"
+// let result =(`I'm ${age} years old`)
 // console.log(result)
 
 // task-27
@@ -148,16 +153,19 @@
 // console.log(result)
 
 // task-29
-// let word = "informatics"
+// let word = "информатика"
 // console.log(word.length)
 
 // task-30
 // let word = "программирование"
-// console.log(word.lastIndexOf("г"))
+// console.log(word.IndexOf("е")) ищеть первый
+// console.log(word.lastIndexOf("е")) ищеть последный
 
 // task-31
 // let sentences = "Мы выполняем домашнее задание."
-// console.log(sentences.split(' ')[2].length)
+// console.log(sentences.split( ` `)[2].length)
+//split - применяется только к строкаб, рабивая строку на массив
+
 
 // task-32
 // let a = 50
@@ -166,7 +174,7 @@
 // task-33
 // let a = 10
 // let b = 35
-// let result = a + b + " "
+// let result = a + b + ` `
 // console.log(result)
 // console.log(typeof result)
 
@@ -186,3 +194,37 @@
 // task-37
 // let boolean = false
 // console.log(boolean)
+
+// ?-если (if) (выполняется когда условие true)
+// :-ести (else) (выполняется когда условие false)
+
+// && - логическое И (конъюнкция - логическое умножение)
+// || - логическое ИЛИ (дизъюнкция - логическое сложение)
+
+// && - если левая часть false то он  покажет левую часть
+// если левая часть true то он покажет левую часть.
+
+// || - если левая часть false то он  покажет правую часть
+// если левая часть true то он покажет левую часть
+
+// // ! - озночает НЕ
+// //
+// let age = 1  // 1 - это
+// //
+// // if (!age) { // true
+// //     console.log(123)
+// // }
+
+let time = 120
+if (time > 0 && time <= 30){
+    console.log("первый")
+}else if (time > 31 && time <= 60){
+    console.log("второй")
+}else  if (time > 61 && time <= 90){
+    console.log("третий")
+}else if (time > 91 && time <=120){
+    console.log("четвертый")
+}else {
+    console.log("неверно")
+}
+
